@@ -1,0 +1,227 @@
+/* Crear estilo al body 
+Siempre con corchete */
+body {
+  /* background: darle color de fondo
+    Termina con ; 
+    cuando es una referencia de color específica se antepone #
+    Font-family: para decirle la fuente de la letra
+    La fuente va entre comilla sencilla*/
+  background-color: #f5f7fa;
+  font-family: "montserrat", "arial";
+}
+/* A todos los elementos de li, espacio entre lineas de 24px con line-height */
+li {
+  line-height: 24px;
+}
+/* Modificar elementos dentro de todas las listas 
+li {
+    background-color: yellow;
+}
+*/
+/* Para llamar una class hay que colocar . al inicio
+Para colocar margenes. En este caso bottom es hacia abajo */
+/* ---------------------------------------------- */
+/* CONTENIDO PRINCIPAL 
+Para darle la margen y el ancho a todo el texto
+Display: altera comportamiento del contenido
+flex: hace que el contenedor sea flexible
+direction: column que sea por columnas 
+Para identificar class= .
+Para identificar ID = #*/
+/* ---------------------------------------------- */
+.contenedor-principal {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: white;
+  width: 1200px;
+  margin: 40px auto;
+}
+
+/* ------------------- */
+/* INFORMACION GENERAL */
+/* ------------------- */
+.descripcion {
+  margin-bottom: 40px;
+}
+/* Para modificar un elemento se debe asignar una clase
+.primer-elemento-lista {
+    background-color:yellow;
+}*/
+
+/* Padding, primer número de arriba abajo y segundo de izquierda a derecha */
+.informacion-general {
+  padding: 100px 88px;
+}
+
+/* Descripción */
+.nombre {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 55px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  
+}
+
+.texto-descripcion {
+  Width: 400px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.descripcion-profesion {
+  /* para cambiar el tamaño de la fuente. El número va acompañado con px */
+  font-size: 14px;
+  /* para cambiar el peso de la fuente */
+  font-weight: 700;
+}
+
+.titulo-seccion-principal {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 45px;
+}
+/* Texto que va en la empresa después del cargo */
+.texto-naranja {
+  color: #FB6D3A;
+}
+
+/* Para fecha laboradas */
+.periodo-empresa {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #A8A8A8;
+}
+
+
+/*Sección proyectos  */
+.lista-proyectos {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 17px;
+}
+
+/* Clase para los links de los proyectos */
+.enlace-proyectos{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* para los puntitos del proyectos */
+.puntos-proyectos {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #595959;
+}
+
+/* Cargos en experiencia laboral */
+.puesto-empresa {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 15px;
+  margin-bottom: 11;
+}
+
+.lista-experiencia {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 17px;
+  text-align: justify;
+}
+
+
+.lugar-estudios {
+  color: #FB6D3A;
+}
+
+/* ---------------------- */
+/* INFORMACION LATERAL */
+/* Para redondear la foto */
+/* ---------------------- */
+.fotoadaza {
+  border-radius: 50%;
+  margin-top: 45px;
+}
+
+/* Padding crea un borde alrededor del contenedor entre sus limites, creando un espacio.
+El primer número es de arriba a abajo, el otro es de lado a lado.
+Pero en esta ocasión no coloqué segundo número ya que así se ve bien.
+Cuando se coloca 0 quita todas las margenes*/
+.informacion-lateral {
+  background-color: #1e2939;
+  padding: 10px;
+}
+/* TITULO LATERAL */
+.titulo-lateral {
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: white;
+}
+/* Para aplicar reglas a 2 o más clases al mismo tiempo,  */
+.contactos,
+.habilidades-tecnicas,
+.habilidades-blandas {
+  margin-left: 40px;
+}
+
+/* SECCION CONTACTOS */
+.tipo-contactos {
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  margin-right: 5px;
+}
+
+.contacto-info {
+  color: rgb(177, 177, 177);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* SECCION DE LISTA */
+.lista-lateral {
+  padding: 0px;
+  padding-left: 18px;
+}
+
+/* Para modificar todos los li que pertenezcan a una clase */
+.lista-lateral > li {
+  color: #fb6d3a;
+}
+
+/* Se colocó span en texto de listas para cambiar la letra y color */
+.elemento-lista-lateral {
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
